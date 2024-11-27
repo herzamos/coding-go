@@ -6,7 +6,6 @@ import (
 	"os/exec"
 )
 
-// CopyToClipboard is for macOS
 func CopyToClipboard(text string) error {
 	command := exec.Command("pbcopy")
 	command.Stdin = bytes.NewReader([]byte(text))

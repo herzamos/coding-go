@@ -5,6 +5,8 @@ import (
 	"flag"
 	"fmt"
 	"strings"
+
+	"github.com/herzamos/coding-go/utils"
 )
 
 //go:embed input.txt
@@ -24,11 +26,11 @@ func main() {
 	// fmt.Println("Running part", part)
 	if part == 1 {
 	 	ans := part1(input)
-		util.CopyToClipboard(fmt.Sprintf("%v", ans))
+		utils.CopyToClipboard(fmt.Sprintf("%v", ans))
 		fmt.Println("Output:", ans)
 	} else {
 		ans := part2(input)
-		util.CopyToClipboard(fmt.Sprintf("%v", ans))
+		utils.CopyToClipboard(fmt.Sprintf("%v", ans))
 		fmt.Println("Output:", ans)
 	}
 }
